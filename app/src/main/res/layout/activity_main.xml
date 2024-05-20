@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="294dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/logo_main" />
+
+    <LinearLayout
+        android:id="@+id/torch_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="146dp"
+            android:layout_height="55dp"
+            android:id="@+id/flash_clap"
+            android:background="@drawable/btn_flash_on_clap"/>
+
+
+
+        <Button
+            android:layout_width="146dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ivflash"
+            android:background="@drawable/btn_flash_light"/>
+
+        <Button
+            android:layout_width="146dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ivFlash"
+            android:background="@drawable/ic_screen_light"/>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/torch_layout"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/rate_app"
+            android:layout_width="60dp"
+            android:layout_height="67dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_rate" />
+
+        <Button
+            android:id="@+id/share_app"
+            android:layout_width="60dp"
+            android:layout_height="67dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_share" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

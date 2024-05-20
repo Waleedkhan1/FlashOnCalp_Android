@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FlashLight</string>
+    <string name="privacy"><u>Privacy Policy</u> </string>
+    <string name="user"><u>User Experience</u></string>
+    <string name="switch_on_text">Switch On</string>
+    <string name="switch_off_text">Switch Off</string>
+    <string name="string_screen_light">SCREEN LIGHT</string>
+
+    //DUMMY AD IDS
+    <!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="native_ad_id">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="app_open_ad_id">ca-app-pub-3940256099942544/2247696110</string>-->
+
+    <!--    //ORIGNAL AD IDS-->
+    <string name="app_id">ca-app-pub-8706461674259924~5976635239</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8706461674259924/4471981871</string>
+    <string name="app_open_ad_id">ca-app-pub-8706461674259924/2009470067</string>
+    <string name="admob_interstitial">ca-app-pub-8706461674259924/5796408501</string>
+    <string name="native_ad_id">ca-app-pub-8706461674259924/3514123423</string>
+
+</resources>

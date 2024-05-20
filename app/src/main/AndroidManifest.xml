@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.personal.flashonclap.light.status.flash">
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <!-- <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+    <!-- <uses-feature android:name="android.hardware.camera.flash" /> -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Include required permissions for Google Mobile Ads to run -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.personal.flashonclap.light.status.flash.views.DetectorActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.personal.flashonclap.light.status.flash.SettingsActiviy"
+            android:exported="false" />
+        <activity
+            android:name="com.personal.flashonclap.light.status.flash.FlashEffectActivity"
+            android:exported="false" />
+        <activity android:name="com.personal.flashonclap.light.status.flash.FlashLightActivity" />
+        <activity
+            android:name="com.personal.flashonclap.light.status.flash.Splash"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.personal.flashonclap.light.status.flash.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="com.itapp.flashlightonclap.led.turnon.flash.CLEARSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.personal.flashonclap.light.status.flash.NoiseAlert"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.personal.flashonclap.light.status.flash.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.personal.flashonclap.light.status.flash.service.ShakeDetectService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.personal.flashonclap.light.status.flash.LockScreen"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

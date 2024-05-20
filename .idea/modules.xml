@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlashOnClap.iml" filepath="$PROJECT_DIR$/FlashOnClap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FlashOnClap.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
